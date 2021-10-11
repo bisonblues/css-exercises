@@ -1,7 +1,17 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  /* This makes sure that the items spread out on the page even if expanded */
+  justify-content: space-between;
+  /*align-content: space-between;*/
 }
+
+/* .left-links,
+.right-links {
+  flex: 1 1 auto;
+} */
 
 .logo {
   font-size: 48px;
@@ -9,11 +19,21 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  align-content: center;
+  justify-content: center;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* This makes sure the indent for 1 and 4 is not too far in */
+  padding: 4px;
+  /* The following 2 lines create some space around the items. */
+  justify-content: space-around;
+  gap: 6px;
+  /* Once the 'header' container is set to flex, this aligns items in a row */
+  display: flex;
+/*  align-content: space-between;*/
 }
 
 a {
